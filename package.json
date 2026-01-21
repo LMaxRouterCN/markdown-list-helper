@@ -9,6 +9,11 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LMaxRouterCN/markdown-list-helper.git"
+  },
+
   "activationEvents": [
     "onStartupFinished"
   ],
