@@ -106,7 +106,7 @@
 
 目前你需要手动安装 `.vsix` 文件：
 
-1.  下载最新的 `markdown-list-helper-x.x.x.vsix` 文件。
+1.  点击上方的绿色`<>Code`按钮下载最新的 `markdown-list-helper-x.x.x.vsix` 文件。
 2.  打开 VS Code。
 3.  点击左侧扩展图标（`Ctrl+Shift+X`）。
 4.  点击右上角的 `...` 菜单，选择 **从 VSIX 安装...** (Install from VSIX...)。
