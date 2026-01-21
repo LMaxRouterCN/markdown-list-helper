@@ -1,0 +1,70 @@
+{
+  "name": "markdown-list-helper",
+  "displayName": "markdown-list-helper",
+  "description": "Add markdown ordered/unordered lists smartly.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "markdownListHelper.addOrderedList",
+        "title": "Markdown List: Add Ordered List"
+      },
+      {
+        "command": "markdownListHelper.addUnorderedList",
+        "title": "Markdown List: Add Unordered List"
+      },
+      {
+        "command": "markdownListHelper.addBlockQuote",
+        "title": "Markdown List: Add Block Quote"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "markdownListHelper.addOrderedList",
+        "key": "ctrl+shift+1",
+        "mac": "cmd+shift+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "markdownListHelper.addUnorderedList",
+        "key": "ctrl+shift+2",
+        "mac": "cmd+shift+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "markdownListHelper.addBlockQuote",
+        "key": "ctrl+shift+3",
+        "mac": "cmd+shift+3",
+        "when": "editorTextFocus"
+      }  
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.52.0",
+    "eslint": "^9.39.2",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
